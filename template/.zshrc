@@ -9,6 +9,16 @@
 # ============================================================================
 
 # ----------------------------------------------------------------------------
+# PATH CONFIGURATION (MUST BE FIRST)
+# ----------------------------------------------------------------------------
+# Add ~/.local/bin to PATH for Grain Network tools (gb, bb, gh, etc.)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Grain Network paths
+export GRAIN_HOME="$HOME/kae3g/grainkae3g"
+export GRAINSTORE="$GRAIN_HOME/grainstore"
+
+# ----------------------------------------------------------------------------
 # PROMPT CONFIGURATION
 # ----------------------------------------------------------------------------
 # Minimalist lambda prompt - clean and fast
@@ -66,11 +76,6 @@ alias l='ls -CF'
 # ----------------------------------------------------------------------------
 # ENVIRONMENT VARIABLES
 # ----------------------------------------------------------------------------
-
-# Grain Network paths
-export GRAIN_HOME="$HOME/kae3g/grainkae3g"
-export GRAINSTORE="$GRAIN_HOME/grainstore"
-export PATH="$HOME/.local/bin:$PATH"
 
 # Editor preferences
 export EDITOR='nano'
